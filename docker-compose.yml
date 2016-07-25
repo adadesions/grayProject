@@ -1,0 +1,12 @@
+dashboard:
+ image: adadesions:grayProject
+ ports:
+  - "8080:80"
+ links:
+  - mongo
+ environment:
+  - MONGO_URL=mongodb://mongo/grayProject
+  - ROOT_URL=http://powerteck.net
+
+mongo:
+ image: mongo:latest
