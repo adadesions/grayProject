@@ -1,3 +1,12 @@
+@font-face
+  font-family: Cloud-Light
+  src: url('/fonts/Cloud-LightBold/Cloud-Light.otf') format("truetype")
+@font-face
+  font-family: Cloud-Bold
+  src: url('/fonts/Cloud-LightBold/Cloud-Bold.otf') format("truetype")
+html
+  font-family: Cloud-Light
+
 // Navigator
 .row.navigator
   margin-bottom: 0
@@ -53,11 +62,14 @@
     img
       background-size: 1310px 450px !important
   .plan
-    padding: 2rem !important
+    padding-top: 2rem !important
+    padding-left: 3rem !important
+    padding-right: 3rem !important
     .col.l3
       width: 23.7%
     h4
       padding-bottom: 1rem
+      font-family: Cloud-Bold
     .plan-item
       border-radius: 0.2rem
       margin: 0.5rem
@@ -72,3 +84,87 @@
       a
         margin: 1.5rem
         opacity: 0.8
+        font-family: Cloud-Bold
+      a:hover
+        opacity: 1
+
+// Footer
+.row.footer
+  margin-bottom: 0
+.footer
+  background-image: url('/images/footer/footer-bg.jpg')
+  padding-top: 2rem !important
+  padding-left: 3rem !important
+  padding-right: 3rem !important
+  padding-bottom: 2rem !important
+  .quick-links
+    h5
+      color: #fff
+      font-family: Cloud-Bold
+    li
+      color: #7FA1A7
+      cursor: pointer
+      line-height: 2rem
+    li:hover
+      color: #fff
+  .last-news
+    h5
+      color: #fff
+      font-family: Cloud-Bold
+    a
+      color: #7FA1A7
+      line-height: 2rem
+    span
+      color: #7FA1A7
+      line-height: 2rem
+  .have-question
+    h5
+      color: #fff
+      font-family: Cloud-Bold
+    span
+      color: #7FA1A7
+      line-height: 2rem
+  .we-accept
+    h5
+      color: #fff
+      font-family: Cloud-Bold
+      line-height: 2rem
+    img
+      width: 100%
+    i
+      font-size: 22px
+      color: #7FA1A7
+      cursor: pointer
+    i.fa-facebook:hover
+      color: #3B5998
+    i.fa-twitter:hover
+      color: #32CCFE
+    i.fa-google-plus:hover
+      color: #D95232
+    i.fa-dribbble:hover
+      color: #C32361
+    i.fa-pinterest-p:hover
+      color: #CB2027
+.row.footer-bottom
+  margin-bottom: 0
+.footer-bottom
+  background-color: #232323
+  padding: 20px 0 21px
+  text-align: center
+  .footer-bottom-container
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+  .copyright
+    font-size: 16px
+    line-height: 33px
+    color: #9aa1ac
+    display: inline-block
+    vertical-align: top
+    float: left
+    a
+      padding-left: 0.25rem
+      padding-right: 0.25rem
+    .border-left-link
+      border-left: 2px solid #7FA1A7
