@@ -1,6 +1,15 @@
 import React from 'react';
 
 export default class Navigator extends React.Component {
+
+  onClickLogo() {
+    FlowRouter.go('main');
+  }
+
+  onClickSignUp() {
+    FlowRouter.go('register');
+  }
+
   render() {
     return(
       <div className="row navigator z-depth-1">
@@ -10,7 +19,7 @@ export default class Navigator extends React.Component {
             <div>
               <a className="btn-floating btn waves-effect waves-light red"><i className="material-icons">input</i></a>
               <span>login</span>
-              <a className="btn-floating btn waves-effect waves-light green"><i className="material-icons">person_pin</i></a>
+              <a onClick={this.onClickSignUp} className="btn-floating btn waves-effect waves-light green"><i className="material-icons">person_pin</i></a>
               <span>register</span>
             </div>
           </div>
@@ -18,7 +27,7 @@ export default class Navigator extends React.Component {
         </div>
         <div className="col l12 navigator-bottom">
           <div className="col l4 navigator-logo">
-            <a href=""><img src="/images/navigator/logo.png"/></a>
+            <a onClick={this.onClickLogo} href=""><img src="/images/navigator/logo.png"/></a>
           </div>
           <div className="col l8 navigator-menu">
             <div className="navigator-list-menu">
