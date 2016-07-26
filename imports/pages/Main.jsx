@@ -10,6 +10,53 @@ export default class Main extends React.Component {
     });
   }
 
+  getItemPlan() {
+    return [
+      { _id: 1,
+        name: 'Gold',
+        cardclass: 'col l3 z-depth-1 plan-item green',
+        max: 1500,
+        min: 150,
+        interest: 5,
+        duration: 10,
+        principle: 'Not Returned'
+      },
+      { _id: 2,
+        name: 'Diamond',
+        cardclass: 'col l3 z-depth-1 plan-item orange',
+        max: 3000,
+        min: 300,
+        interest: 3,
+        duration: 10,
+        principle: 'Not Returned'
+      },
+      { _id: 3,
+        name: 'Silver',
+        cardclass: 'col l3 z-depth-1 plan-item light-blue',
+        max: 3000,
+        min: 300,
+        interest: 3,
+        duration: 10,
+        principle: 'Not Returned'
+      },
+      { _id: 4,
+        name: 'Platinum',
+        cardclass: 'col l3 z-depth-1 plan-item red',
+        max: 3000,
+        min: 300,
+        interest: 3,
+        duration: 10,
+        principle: 'Not Returned'
+      },
+    ];
+  }
+
+  renderPlan() {
+    return this.getItemPlan().map((items) => (
+      <PlanItem key={items._id} items={items} />
+    ));
+  }
+
   render() {
     return(
       <div className="row main">
@@ -42,10 +89,7 @@ export default class Main extends React.Component {
         </div>
         <div className="col l12 plan">
           <h4>Our Plans</h4>
-          <PlanItem />
-          <PlanItem />
-          <PlanItem />
-          <PlanItem />
+          {this.renderPlan()}
         </div>
       </div>
     )
