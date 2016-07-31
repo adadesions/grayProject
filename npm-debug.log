@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'uninstall',
+1 verbose cli   'cd-highcharts' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose unbuild node_modules\cd-highcharts
+5 info preuninstall cd-highcharts@0.0.1
+6 info uninstall cd-highcharts@0.0.1
+7 verbose unbuild rmStuff cd-highcharts@0.0.1 from E:\github\grayProject\node_modules
+8 info postuninstall cd-highcharts@0.0.1
+9 silly gentlyRm E:\github\grayProject\node_modules\cd-highcharts is being purged from base E:\github\grayProject
+10 verbose gentlyRm don't care about contents; nuking E:\github\grayProject\node_modules\cd-highcharts
+11 silly vacuum-fs purging E:\github\grayProject\node_modules\cd-highcharts
+12 verbose stack Error: EPERM: operation not permitted, unlink 'E:\github\grayProject\node_modules\cd-highcharts\node_modules'
+12 verbose stack     at Error (native)
+13 verbose cwd E:\github\grayProject
+14 error Windows_NT 6.3.9600
+15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "uninstall" "cd-highcharts"
+16 error node v4.4.7
+17 error npm  v2.15.8
+18 error path E:\github\grayProject\node_modules\cd-highcharts\node_modules
+19 error code EPERM
+20 error errno -4048
+21 error syscall unlink
+22 error Error: EPERM: operation not permitted, unlink 'E:\github\grayProject\node_modules\cd-highcharts\node_modules'
+22 error     at Error (native)
+22 error  { [Error: EPERM: operation not permitted, unlink 'E:\github\grayProject\node_modules\cd-highcharts\node_modules']
+22 error   errno: -4048,
+22 error   code: 'EPERM',
+22 error   syscall: 'unlink',
+22 error   path: 'E:\\github\\grayProject\\node_modules\\cd-highcharts\\node_modules' }
+23 error Please try running this command again as root/Administrator.
+24 verbose exit [ -4048, true ]

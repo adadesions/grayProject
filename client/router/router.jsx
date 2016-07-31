@@ -8,6 +8,7 @@ import Container from '../../imports/layouts/Container.jsx';
 // Component
 import Main from '../../imports/pages/Main.jsx';
 import Register from '../../imports/pages/Register.jsx';
+import Profile from '../../imports/pages/Profile.jsx';
 
 const mainRouter = FlowRouter.group({
   name: 'mainpage',
@@ -27,6 +28,15 @@ mainRouter.route('/register', {
   action() {
     mount(Container, {
       content: <Register />,
+    });
+  },
+});
+
+mainRouter.route('/profile', {
+  name: 'profile',
+  action() {
+    mount(Container, {
+      content: <Profile />,
     });
   },
 });

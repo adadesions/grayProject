@@ -6,8 +6,12 @@ export default class Register extends React.Component {
       <div className="row register">
         <h4>Register</h4>
         <div className="input-field col l12">
-          <input id="referralName" type="text" className="validate"/>
-          <label htmlFor="referralName">Referral Name</label>
+          <input id="referralID" type="text" className="validate"/>
+          <label htmlFor="referralID">Referral ID</label>
+        </div>
+        <div className="input-field col l12">
+          <input id="IdentificationNumber" type="number" className="validate"/>
+          <label htmlFor="IdentificationNumber">Identification Number</label>
         </div>
         <div className="input-field col l12">
           <input id="firstName" type="text" className="validate"/>
@@ -26,12 +30,16 @@ export default class Register extends React.Component {
           <label htmlFor="password">Password</label>
         </div>
         <div className="input-field col l12">
-          <input id="tranactionPin" type="text" className="validate"/>
-          <label htmlFor="tranactionPin">Tranaction Pin</label>
+          <input id="account number" type="text" className="validate"/>
+          <label htmlFor="account number">Account Number</label>
         </div>
         <div className="input-field col l12">
           <input id="email" type="email" className="validate"/>
           <label htmlFor="email">Email</label>
+        </div>
+        <div className="input-field col l12">
+          <input id="tel" type="text" className="validate"/>
+          <label htmlFor="tel">Tel.</label>
         </div>
         <div className="input-field col l12 btn-submit">
           <a className="waves-effect waves-light btn">Submit</a>
